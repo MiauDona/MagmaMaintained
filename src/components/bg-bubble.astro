@@ -1,2 +1,19 @@
+---
+interface Props {
+	opacity: string;
+}
+const opacity = Astro.props.opacity || '1';
+---
 
-
+<div class="mi-circulo"></div>
+<style define:vars={{ opacity }}>
+    
+    .mi-circulo {
+      width: 100px;
+      height: 100px;
+      background-color: var(--color-secondary);
+      opacity: var(--opacity);
+      border-radius: 50%;
+    }
+    
+</style>
