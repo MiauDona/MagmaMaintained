@@ -4,18 +4,18 @@ interface Props {
   left?: string;
   top?: string;
   right?: string;
-  bottom?: string;
+
 }
 const opacity = Astro.props.opacity || '1';
 const left = Astro.props.left || '0';
 const top = Astro.props.top || '0';
 const right = Astro.props.right || '0';
-const bottom = Astro.props.bottom || '0';
+
 
 ---
 
 <div class="mi-circulo"></div>
-<style define:vars={{ opacity, left, top, right, bottom }}>
+<style define:vars={{ opacity, left, top, right, }}>
     
     .mi-circulo {
       width: 55px;
@@ -27,7 +27,6 @@ const bottom = Astro.props.bottom || '0';
       top: var(--top);
       left: var(--left);
       right: var(--right);
-      bottom: var(--bottom);
       z-index: 0;
     }
     @media (max-width: 1400px) {
