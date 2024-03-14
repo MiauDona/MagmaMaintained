@@ -3,13 +3,10 @@ interface Props {
 	opacity: string;
   left?: string;
   top?: string;
-  right?: string;
-
 }
 const opacity = Astro.props.opacity || '1';
 const left = Astro.props.left || '0';
 const top = Astro.props.top || '0';
-const right = Astro.props.right || '0';
 
 
 ---
@@ -26,7 +23,6 @@ const right = Astro.props.right || '0';
       position: absolute;
       top: var(--top);
       left: var(--left);
-      right: var(--right);
       z-index: 0;
     }
     @media (max-width: 1400px) {
