@@ -5,14 +5,14 @@ import HeaderBg from "./header/header-bg.astro";
 <header class="b-bold">
     <HeaderBg />
     <div class="flex flex-col items-center justify-center h-[100vh] gap-20">
-        <h1 class="text-9xl b-bold text-center -mt-48">Magma <br>Maintained</h1>
+        <h1 class="text-9xl b-bold text-center -mt-32">Magma <br>Maintained</h1>
 
-        <div class="flex w-[40vw] justify-center gap-20 n-bold text-4xl text-center">
-            <a href="">
-                <div class=" download-btn-1 w-[300px] h-[60px] rounded-lg flex items-center justify-center ">Download</div>
+        <div class="flex w-[40vw] justify-center gap-48 n-bold text-5xl text-center">
+            <a href="https://discord.com/invite/zhqAz5BcJe">
+                <div class="download-btn-1 w-[310px] h-[75px] rounded-xl flex items-center justify-center">Download</div>
             </a>
-            <a href="">
-                <div class="support-btn-1 w-[300px] h-[60px] rounded-lg flex items-center justify-center ">Discord</div>
+            <a href="https://discord.com/invite/zhqAz5BcJe">
+                <div class="support-btn-1 w-[310px] h-[75px] rounded-xl flex items-center justify-center">Discord</div>
             </a>
         </div>
     </div>
@@ -26,9 +26,12 @@ import HeaderBg from "./header/header-bg.astro";
     
     .download-btn-1 {
         background: var(--color-gradient-accent);
+        
     }
 
     .support-btn-1 {
-
+        border: 2px solid var(--color-border-accent);
+        color: var(--color-border-accent);
+        
     }
 </style>
