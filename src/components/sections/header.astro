@@ -2,16 +2,33 @@
 import HeaderBg from "./header/header-bg.astro";
 ---
 
-<header>
+<header class="b-bold">
     <HeaderBg />
+    <div class="flex flex-col items-center justify-center h-[100vh] gap-20">
+        <h1 class="text-9xl b-bold text-center -mt-48">Magma <br>Maintained</h1>
 
+        <div class="flex w-[40vw] justify-center gap-20 n-bold text-4xl text-center">
+            <a href="">
+                <div class=" download-btn-1 w-[300px] h-[60px] rounded-lg flex items-center justify-center ">Download</div>
+            </a>
+            <a href="">
+                <div class="support-btn-1 w-[300px] h-[60px] rounded-lg flex items-center justify-center ">Discord</div>
+            </a>
+        </div>
+    </div>
 </header>
 
-
-
 <style>
-    body {
+    header {
         max-height: 100vh;
+        min-height: 100vh;
     }
     
+    .download-btn-1 {
+        background: var(--color-gradient-accent);
+    }
+
+    .support-btn-1 {
+
+    }
 </style>
