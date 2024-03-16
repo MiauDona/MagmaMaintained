@@ -1,0 +1,26 @@
+---
+interface Props {
+	question: string;
+    answer1: string;
+    answer2?: string;
+    answer3?: string;
+}
+
+const question = Astro.props;
+const answer1 = Astro.props;
+const answer2 = Astro.props||"";
+const answer3 = Astro.props||"";
+---
+
+<article class="">
+    { question }
+    { answer1 }
+    { answer2 }
+    { answer3 }
+</article>
+
+<style>
+    article {
+        background-color: var(--color-secondary);
+    }
+</style>
