@@ -1,17 +1,17 @@
 
 
 
-<section class="flex gap-32 justify-center items-center ">
+<section class="flex justify-center items-center xl:gap-32 md:gap-16 flex-col-reverse xl:flex-row md:h-[100vh] my-28 sm:mx-0 px-12">
     <article class="flex flex-col gap-6">
-        <div class="n-bold text-5xl"><h1>Download</h1></div>
-        <div class="n-medium text-3xl mb-6"><p>The preferred server software for most people. </p></div>
+        <div class="n-bold lg:text-5xl text-4xl"><h1>Download</h1></div>
+        <div class="n-medium lg:text-3xl text-2xl mb-6"><p>The preferred server software for most people. </p></div>
         <a href="https://discord.com/invite/zhqAz5BcJe">
-            <div class="n-medium text-2xl download-btn-1 w-[140px] rounded-xl flex justify-center items-center text-center h-[50px]">Download</div>
+            <div class="n-medium lg:text-2xl text-xl download-btn-1 lg:w-[140px] rounded-xl flex justify-center items-center text-center h-[50px]">Download</div>
         </a>
     </article>
     <article class="">
         <div class="">
-            <div class=" rounded-xl w-[700px] h-[450px]">img</div>
+            <div class="rounded-xl sm:w-[500px] sm:h-[auto] w-[100px] img">img</div>
         </div>
     </article>
 </section>
@@ -19,9 +19,15 @@
 <style>
     section {
         width: 100%;
-        height: 100vh;
     }
     .download-btn-1 {
         background: var(--color-gradient-accent); 
     }
+    
+    @media (max-width: 768px) {
+        .img {
+            display: none;
+        }
+    }
+
 </style>
