@@ -1,3 +1,11 @@
-<div class="w-full text-center px-96 py-2 mx-auto border-y-[2px] border-blue-500 bg-blue-300 bg-opacity-40 flex justify-center items-center my-1">
-    <h4 class="n-bold">Info:</h4> <h4 class="n-medium ">This is a info line for the page</h4>
+---
+interface msg {
+    msg: string;
+}
+
+const msg = Astro.props.msg;
+---
+
+<div class="w-full text-center py-2 border-y-[2px] bg-opacity-40 my-1 border-blue-500 bg-blue-300">
+    <h4 ><span class="n-bold">Info: </span><span class="n-medium "> { msg } </span></h4>
 </div>
